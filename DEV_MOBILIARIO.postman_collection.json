@@ -1,0 +1,159 @@
+{
+  "info": {
+    "_postman_id": "61ff123b-fd65-4bb0-a3bd-8fbef6e79463",
+    "name": "DEV_MOBILIARIO",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58692452",
+    "_collection_link": "https://go.postman.co/collection/58692452-61ff123b-fd65-4bb0-a3bd-8fbef6e79463?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "AddMobiliario",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"codigo\": \"MOB-013\",\n  \"nombre\": \"Perchero de pie\",\n  \"material\": \"Metal\",\n  \"color\": \"Negro\",\n  \"costo\": 620.00\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5299/api/mobiliarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5299",
+          "path": [
+            "api",
+            "mobiliarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetMobiliario",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5299/api/mobiliarios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5299",
+          "path": [
+            "api",
+            "mobiliarios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetMobiliarioById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5299/api/mobiliarios/13",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5299",
+          "path": [
+            "api",
+            "mobiliarios",
+            "13"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpMobiliario",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"codigo\": \"MOB-013\",\n  \"nombre\": \"Perchero de pie reforzado\",\n  \"material\": \"Metal\",\n  \"color\": \"Blanco\",\n  \"costo\": 750.00\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5299/api/mobiliarios/13",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5299",
+          "path": [
+            "api",
+            "mobiliarios",
+            "13"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteMobiliario",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5299/api/mobiliarios/13",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5299",
+          "path": [
+            "api",
+            "mobiliarios",
+            "13"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5299"
+    }
+  ]
+}
